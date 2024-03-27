@@ -1,0 +1,119 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0db1e2, #70b7cc);
+    color: #333;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa del viewport */
+    display: flex;
+    flex-direction: column; /* Para que el contenido se expanda verticalmente */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+.header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    background: linear-gradient(to left, #8807a1, #884196);
+    font-size: 5em;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: monospace;
+}
+
+/* Estilos del contenido principal */
+.main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+    padding: 20px;
+}
+
+#titleMain {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-family: math;
+}
+
+/* Estilos del botón */
+#buttonFollowing,
+#characteristics {
+    background-color: #0a6e45;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cambia el cursor a una mano cuando pases sobre el botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+    margin-bottom:  3.5px;
+}
+
+/* Cambio de estilo al pasar el mouse sobre el botón */
+#buttonFollowing:hover,
+#characteristics:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Cambio de estilo al hacer clic en el botón */
+#buttonFollowing:active
+#characteristics:active {
+    background-color: #222; /* Cambia el color de fondo cuando se hace clic en el botón */
+}
+
+
+.imgContainer {
+    background-color: #ac43b6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.titleImg {
+    margin-bottom: 10px;
+    font-family: cursive;
+    font-size: 45px;
+}
+
+#img {
+    max-width: 50%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+    max-height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+}
+
+#characteristicsDiv {
+    border: 2px solid black;
+    width: 25%;
+    height: 150px;
+    position: relative;
+    bottom: 350px;
+    left: 550px;
+    background: linear-gradient(45deg, #448b8b, #bd57b5);
+    font-family: cursive;
+    font-size: smaller;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Hace que el pie de página se pegue al fondo */
+}
+
+#spanFooter {
+    font-size: 0.8em;
+}
